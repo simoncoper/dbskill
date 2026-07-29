@@ -56,3 +56,9 @@ window.PHD_MENTORS = (window.PHD_MENTORS || []).concat([
     url:"https://psychology.sjtu.edu.cn/tsml/605.html"
   }
 ]);
+
+(() => {
+  const script = document.createElement('script');
+  script.src = './history.js';
+  document.body.appendChild(script);
+})();
