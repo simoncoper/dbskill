@@ -21,3 +21,38 @@ window.PSYCHOLOGY_PHD_ADJACENT = [
     source: "https://psy.ruc.edu.cn/shfw1/kcpxb/b294244ab1ca4cccb5ff3ba67b4b85d2.htm"
   }
 ];
+
+window.PHD_MENTORS = (window.PHD_MENTORS || []).concat([
+  {
+    name:"陈嫱",school:"上海交通大学",unit:"心理学院",route:"心理学学博 / 应用心理专博（当年资格待确认）",
+    themes:["数字心理健康","AI心理干预","虚拟现实","ACT数字干预"],fit:5.0,
+    status:"未列入2026公开博士招生导师名单；2027资格需确认",
+    match:"研究直接聚焦低成本、可推广的数字化与智能化心理干预，产品形态与“必作于易”高度契合。",
+    risk:"当前教师主页未明确当年博士名额；研究属于心理健康干预，需要伦理、风险处置和循证框架。",
+    url:"https://psychology.sjtu.edu.cn/tsml/525.html"
+  },
+  {
+    name:"赖晓君",school:"上海交通大学",unit:"心理学院",route:"心理学 / 应用心理交叉方向（当年资格待确认）",
+    themes:["人机交互","用户体验","AI领导力","科技接受","智能健康管理"],fit:4.9,
+    status:"未列入2026公开博士招生导师名单；2027资格需确认",
+    match:"可研究AI教练、用户接受、持续使用、算法管理和产品交互，是产品研究最直接的交叉方向之一。",
+    risk:"教师入职时间较新，不能把方向匹配等同于已有博士名额。",
+    url:"https://psychology.sjtu.edu.cn/tsml/439.html"
+  },
+  {
+    name:"王立卉",school:"上海交通大学",unit:"心理学院",route:"心理学学术博士",
+    themes:["具身认知","具身智能","交互设计","用户体验","人工智能"],fit:4.7,
+    status:"官方标注博士生导师；列入2025招生，未列入2026公开名单，2027需确认",
+    match:"其研究明确覆盖交互设计、用户体验、教育和人工智能，可承接数字身份、行动控制和智能产品研究。",
+    risk:"核心方法包括眼动、脑成像和机器学习，技术与实验门槛高。",
+    url:"https://psychology.sjtu.edu.cn/tsml/214.html"
+  },
+  {
+    name:"申远",school:"上海交通大学",unit:"心理学院 / 精神卫生中心",route:"应用心理专业博士",
+    themes:["睡眠干预","认知情感损害","精神健康","精准干预"],fit:4.1,
+    status:"官方标注博士生导师；列入2026应用心理博士招生名单，名额1",
+    match:"若将产品聚焦睡眠、压力或健康行为，能够进入明确的临床与健康干预场景。",
+    risk:"临床医学和精神障碍色彩强，不适合仅凭通用行为改变产品直接申请。",
+    url:"https://psychology.sjtu.edu.cn/tsml/605.html"
+  }
+]);
