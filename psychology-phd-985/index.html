@@ -27,7 +27,7 @@
     <section class="metric-grid">
       <article><span>心理学具体项目</span><strong id="project-count">16</strong><small>学博、专博、学习方式拆开</small></article>
       <article><span>交叉博士路径</span><strong id="cross-count">8</strong><small>教育技术、HCI、设计、公共卫生</small></article>
-      <article><span>导师候选</span><strong id="mentor-count">25</strong><small>优先收录官方可核验信息</small></article>
+      <article><span>导师候选</span><strong id="mentor-count">0</strong><small>按具体项目建立导师池</small></article>
       <article><span>高适配导师</span><strong id="mentor-high-count">0</strong><small>适配度 ≥ 4.8</small></article>
     </section>
 
@@ -41,7 +41,7 @@
     <section class="notice warning"><strong>时间提醒：</strong>清华心理与认知科学系2027年第一批已于2026年7月28日截止；第二批是否开放取决于剩余名额。</section>
 
     <section id="core-projects" class="content-section">
-      <div class="section-heading"><div><div class="eyebrow">CORE PSYCHOLOGY</div><h2>16个心理学项目横向对比</h2></div><p>电脑显示完整表格；手机自动切换为结构一致的项目卡，不再使用错位的固定列。</p></div>
+      <div class="section-heading"><div><div class="eyebrow">CORE PSYCHOLOGY</div><h2>16个心理学项目横向对比</h2></div><p>电脑显示完整表格；手机自动切换为结构一致的项目卡。导师按具体项目绑定，不再按学校机械取前三名。</p></div>
 
       <div class="comparison-controls">
         <div class="search-wrap"><label for="project-search">搜索项目、门槛、导师或方向</label><input id="project-search" type="search" placeholder="例如：非全日制、雅思6.5、辞职、数字干预"></div>
@@ -56,12 +56,12 @@
         </div>
         <div class="view-switch"><button class="view-button active" data-table-view="core" type="button">核心列</button><button class="view-button" data-table-view="full" type="button">全部字段</button></div>
       </div>
-      <div class="comparison-meta"><span id="project-result-count"></span><span>待发布即官方尚未给出足够信息，不做猜测。</span></div>
+      <div class="comparison-meta"><span id="project-result-count"></span><span>“官方年度名单”与“方向候选池”分开标记；后者不等于2027有名额。</span></div>
 
       <div class="desktop-project-table core-view" id="project-table-wrap">
         <table class="project-table">
           <thead><tr>
-            <th>学校 / 项目</th><th>相关导师</th><th>类型 / 学习方式</th><th>英语门槛</th><th>科研门槛</th><th>工作经历</th><th>学费 / 脱产</th><th class="optional-column">研究计划</th><th class="optional-column">考核方式</th><th class="optional-column">2027状态</th><th>适配度</th><th>首要阻断项</th><th>结论</th><th class="optional-column">来源</th>
+            <th>学校 / 项目</th><th>项目导师池</th><th>类型 / 学习方式</th><th>英语门槛</th><th>科研门槛</th><th>工作经历</th><th>学费 / 脱产</th><th class="optional-column">研究计划</th><th class="optional-column">考核方式</th><th class="optional-column">2027状态</th><th>适配度</th><th>首要阻断项</th><th>结论</th><th class="optional-column">来源</th>
           </tr></thead>
           <tbody id="project-table-body"></tbody>
         </table>
@@ -71,15 +71,15 @@
     </section>
 
     <section id="cross-projects" class="content-section">
-      <div class="section-heading"><div><div class="eyebrow">CROSS-DISCIPLINARY</div><h2>交叉博士项目</h2></div><p>按照研究问题是否契合筛选，而不是按照最终学位名称机械筛选。</p></div>
+      <div class="section-heading"><div><div class="eyebrow">CROSS-DISCIPLINARY</div><h2>交叉博士项目</h2></div><p>按照研究问题是否契合筛选，而不是按照最终学位名称机械筛选；每个项目也建立独立导师池。</p></div>
       <div class="cross-summary"><strong>优先新增：</strong>华东师大教育技术、南开软件、清华工业工程、同济设计。它们比部分传统心理学项目更能接住真实产品、用户行为和系统干预。</div>
       <div id="cross-project-list" class="cross-project-list"></div>
     </section>
 
     <section id="mentors" class="content-section">
-      <div class="section-heading"><div><div class="eyebrow">MENTOR MAP</div><h2>导师级对比</h2></div><p>“方向匹配”不等于当年有名额。官方标注博导与2027实际招生资格分开显示。</p></div>
+      <div class="section-heading"><div><div class="eyebrow">MENTOR MAP</div><h2>导师级对比</h2></div><p>每位导师反向显示已绑定的具体项目；“方向匹配”不等于当年有招生名额。</p></div>
       <div class="mentor-controls">
-        <div class="search-wrap"><label for="mentor-search">搜索导师、学校或研究方向</label><input id="mentor-search" type="search" placeholder="例如：数字心理健康、人机交互、学习科学、正念"></div>
+        <div class="search-wrap"><label for="mentor-search">搜索导师、学校、项目或研究方向</label><input id="mentor-search" type="search" placeholder="例如：数字心理健康、人机交互、学习科学、正念"></div>
         <div class="filter-group" id="mentor-filter-group">
           <button class="filter-chip active" data-mentor-filter="all" type="button">全部</button>
           <button class="filter-chip" data-mentor-filter="数字心理健康" type="button">数字健康</button>
@@ -89,15 +89,15 @@
           <button class="filter-chip" data-mentor-filter="highFit" type="button">高适配</button>
         </div>
       </div>
-      <div class="comparison-meta"><span id="mentor-result-count"></span><span>点击“官方主页”核验最新招生信息。</span></div>
+      <div class="comparison-meta"><span id="mentor-result-count"></span><span>点击项目中的“查看导师池与证据”，可以查看完整绑定名单及其口径。</span></div>
       <div id="mentor-list" class="mentor-list"></div>
     </section>
 
     <section class="content-section decision-section">
       <div class="section-heading"><div><div class="eyebrow">DECISION</div><h2>当前申请顺序</h2></div></div>
       <div class="priority-grid">
-        <article class="priority-card top"><span>心理学主申</span><strong>北师大 · 华东师大 · 浙大</strong><p>同时建立导师池，不再只比较学校。</p></article>
-        <article class="priority-card"><span>交叉主申</span><strong>华东师大教育技术 · 南开软件 · 同济设计</strong><p>这三条路径最能把产品直接转化为研究平台。</p></article>
+        <article class="priority-card top"><span>心理学主申</span><strong>北师大 · 华东师大 · 浙大</strong><p>先在各自项目导师池内筛选，不再只比较学校。</p></article>
+        <article class="priority-card"><span>交叉主申</span><strong>华东师大教育技术 · 南开软件 · 同济设计</strong><p>真实产品、用户行为与系统干预可以直接成为研究资产。</p></article>
         <article class="priority-card"><span>高门槛冲刺</span><strong>清华 · 北大 · 清华工业工程</strong><p>需要更成熟的论文、方法与导师前置沟通。</p></article>
         <article class="priority-card muted-card"><span>条件路线</span><strong>复旦公共卫生 · 教育博士</strong><p>先核验工作经历和研究场景是否满足资格。</p></article>
       </div>
@@ -108,7 +108,7 @@
       <div id="school-list" class="school-list"></div>
     </details>
 
-    <section class="source-section"><div class="source-note"><p>项目和导师信息优先来自学校研究生院、学院招生办法和教师官方主页。2027尚未发布的项目以2026规则作规划参照。</p><p>导师身份、研究方向和当年招生资格可能变化；正式联系前必须再次查看招生目录和教师主页。</p></div></section>
+    <section class="source-section"><div class="source-note"><p>项目和导师信息优先来自学校研究生院、年度招生名单、学院招生办法和教师官方主页。完整年度名单与研究方向候选池严格分开。</p><p>导师身份、研究方向和当年招生资格可能变化；正式联系前必须再次查看招生目录和教师主页。</p></div></section>
   </main>
 
   <dialog id="school-dialog" class="school-dialog"><button class="dialog-close" id="dialog-close" type="button">×</button><div id="dialog-content"></div></dialog>
@@ -120,6 +120,8 @@
   <script src="./projects.js"></script>
   <script src="./cross-projects.js"></script>
   <script src="./mentors.js"></script>
+  <script src="./mentor-additions.js"></script>
+  <script src="./mentor-pools.js"></script>
   <script src="./adjacent.js"></script>
   <script src="./app.js"></script>
 </body>
